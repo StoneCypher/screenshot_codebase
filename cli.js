@@ -1,4 +1,4 @@
 
 var sc = require('./sc.js');
 
-sc.shot({to_html: [{code:'var i = 1;', name:'foo.js', lang:'javascript' }]});
+sc.shot({to_html: ['sc.js', 'cli.js', 'README.md'], size:3});
