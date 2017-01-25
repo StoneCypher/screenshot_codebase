@@ -9,13 +9,15 @@ If you don't have `npm`, [install `node`](https://nodejs.org/en/download/) to ge
 ## Basic Usage
 
   * `screenshot_codebase`
-    * Creates `output.png` with a screenshot of the current directory, travelling downwards, 
+    * Creates `output.png` with a screenshot of the current directory, travelling downwards,
       with standard excludes, the default `midnight` theme, and automatic highlighting turned on.
   * ~~`screenshot_codebase -h off -c midnight -o final.png`~~
     * ~~Creates `final.png` with highlighting turned off, in the `midnight` theme~~
-    
+
 ## Arguments
   * ~~`-o` output filename~~
+  * ~~`-a` allow cosmetic padding
+  * ~~`-w` word wrap at n (negative means crop instead)
   * ~~`-f` font~~
   * ~~`-s` font size (default 4px)~~
   * ~~`-c` color theme~~
@@ -23,4 +25,4 @@ If you don't have `npm`, [install `node`](https://nodejs.org/en/download/) to ge
   * ~~`-x` exclude comma-separated list of extensions~~
   * ~~`-t` type override comma-separated list of key/val pairs for ext = lang (eg for perl vs prolog as .pl)~~
   * ~~`-l` location to start from~~
-  * ~~`-1` single image screenshots (treats -o as a directory to create name instead)
+  * ~~`-1` single image screenshots (treats -o as a directory to create name instead)~~
