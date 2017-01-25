@@ -1,0 +1,21 @@
+{
+
+    "md"         : "markdown",
+    "mdown"      : "markdown",
+    "markdown"   : "markdown",
+
+    "js"         : "jsx",
+    "javascript" : "jsx",
+    "jsx"        : "jsx",
+
+    "erl"        : "erlang",
+    "hrl"        : "erlang",
+
+    "css"        : "css-extras",
+
+    "sql"        : "sql",
+
+    "html"       : "html",
+    "htm"        : "html"
+
+}

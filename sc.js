@@ -1,8 +1,16 @@
 
-const fs        = require('fs'),
-      dataurl   = require('dataurl'),
-      Nightmare = require('nightmare'),
-      Prism     = require('prismjs');
+const fs          = require('fs'),
+      dataurl     = require('dataurl'),
+      Nightmare   = require('nightmare'),
+      Prism       = require('prismjs'),
+
+      languages   = require('./languages.json'),
+      builtins    = require('./builtins.json');
+
+const final_langs = Array.from(new Set(Object.keys(languages).map(k => languages[k]))).filter(f => !builtins.includes(f));
+
+final_langs.map(l => require(`./node_modules/prismjs/components/prism-${l}.js`));
+
 
 
 
@@ -12,7 +20,13 @@ const noOp = () => {};
 
 
 function get_language(fname) {
-  return 'javascript';
+  return languages[get_ext(fname.toLowerCase())];
+}
+
+
+
+function get_ext(fname) {
+  return fname.split('.').pop();
 }
 
 
@@ -29,7 +43,7 @@ ${ suppressBorder? '<style type="text/css">html pre[class*="language-"] { paddin
     </style>
   </head>
   <body>
-    <pre${uclass}><code${uclass}>${Prism.highlight(code, Prism.languages.javascript)}</code></pre>
+    <pre${uclass}><code${uclass}>${Prism.highlight(code, Prism.languages[language])}</code></pre>
   </body>
 </html>`;
 }
@@ -68,7 +82,8 @@ function shot(opts) {
   return q_shot(opts);
 }
 
-// item format is {code:'var i = 1;', name:'foo.js', lang:'javascript'}
+
+
 function q_shot({ to_html=[], theme='okaidia', disk_path='./output/', fname='output.png', width=1024, height=768, cb = noOp, size }) {
 
     // make the directory if it doesn't exist

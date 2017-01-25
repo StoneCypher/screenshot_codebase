@@ -1,6 +1,6 @@
 {
   "name": "screenshot_codebase",
-  "version": "0.1.0",
+  "version": "0.3.2",
   "description": "Take a screenshot of a codebase",
   "main": "dist/sc.js",
   "scripts": {

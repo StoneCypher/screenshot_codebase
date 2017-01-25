@@ -15,15 +15,15 @@ If you don't have `npm`, [install `node`](https://nodejs.org/en/download/) to ge
     * ~~Creates `final.png` with highlighting turned off, in the `midnight` theme~~
 
 ## Arguments
-  * ~~`-a` allow cosmetic padding
+  * ~~`-a` allow cosmetic padding~~
   * ~~`-c` color theme~~
   * ~~`-f` font~~
   * ~~`-h` auto|off|~~
   * ~~`-l` location to start from~~
   * ~~`-o` output filename~~
-  * ~~`-r` recursively scan downwards (default `true`; accepts `0`/`1`, `true`/`false`, `on`/`off`, `y`/`n`)
+  * ~~`-r` recursively scan downwards (default `true`; accepts `0`/`1`, `true`/`false`, `on`/`off`, `y`/`n`)~~
   * ~~`-s` font size (default 4px)~~
   * ~~`-t` type override comma-separated list of key/val pairs for ext = lang (eg for perl vs prolog as .pl)~~
-  * ~~`-w` word wrap at n (negative means crop instead)
+  * ~~`-w` word wrap at n (negative means crop instead)~~
   * ~~`-x` exclude comma-separated list of extensions~~
   * ~~`-1` single image screenshots (treats -o as a directory to create name instead)~~
