@@ -15,6 +15,7 @@ If you don't have `npm`, [install `node`](https://nodejs.org/en/download/) to ge
     * ~~Creates `final.png` with highlighting turned off, in the `midnight` theme~~
     
 ## Arguments
+  * ~~`-o` output filename~~
   * ~~`-f` font~~
   * ~~`-s` font size (default 4px)~~
   * ~~`-c` color theme~~
@@ -22,3 +23,4 @@ If you don't have `npm`, [install `node`](https://nodejs.org/en/download/) to ge
   * ~~`-x` exclude comma-separated list of extensions~~
   * ~~`-t` type override comma-separated list of key/val pairs for ext = lang (eg for perl vs prolog as .pl)~~
   * ~~`-l` location to start from~~
+  * ~~`-1` single image screenshots (treats -o as a directory to create name instead)
