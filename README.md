@@ -1,6 +1,8 @@
 # screenshot_codebase
 Want a screenshot of a codebase?  Want to compare the size of two codebases visually?  Here ya go.
 
+(this is alpha code)
+
 ## Installation
 `npm install -g screenshot_codebase`
 
